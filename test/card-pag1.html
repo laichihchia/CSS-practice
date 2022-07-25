@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .card-page1{
+      margin-top: 20px;
+      width: 100%;
+      height: 240px;
+      /* background-color: bisque; */
+    }
+    .card-wrap{
+      display: flex;
+      text-align: center;
+    }
+    .card-main{
+      width: calc(100%-72px)/4;
+      position: relative;
+      /* overflow: hidden; */
+    }
+    .card-main a{
+      width: 100%;
+      background-color: rgb(0, 33, 22);
+    }
+    .card img{
+      width: 90%;
+      height: 240px;
+      position: relative;
+      transition: .5s all ease;
+      outline: 1.5px solid white;
+    }
+    .card figcaption{
+      color: black;
+      text-decoration: underline;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      bottom: 10%;
+    }
+    .card img:hover{
+      box-shadow: rgba(100, 100, 111, 0.57) 0px 0px 20px 0px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card-page1">
+    <div class="card-wrap">
+      <div class="card-main">
+        <a href="">
+          <figure class="card">
+            <img src="./adidas_img/adidas-shoes1.jpeg" alt="">
+            <figcaption class="text">ULTRABOOST</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="card-main">
+        <a href="">
+          <figure class="card">
+            <img src="./adidas_img/adidas-shoes2.jpeg" alt="">
+            <figcaption>籃球鞋</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="card-main">
+        <a href="">
+          <figure class="card">
+            <img src="./adidas_img/adidas-shoes3.jpeg" alt="">
+            <figcaption>FORUM</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="card-main">
+        <a href="">
+          <figure class="card">
+            <img src="./adidas_img/adidas-shoes4.jpeg" alt="">
+            <figcaption>SUPERSTAR</figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

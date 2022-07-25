@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>card</title>
+  <style>
+    .card-page1-container{
+      width: 100%;
+      height: 400px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .card-page1-container a{
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+    }
+    .card img{
+      width: auto;
+      height: 90%;
+    }
+    .card p{
+      text-decoration: underline;
+      color: black;
+      position: absolute;
+    }
+    /* ------------------------------------------------------------------------ */
+    .card-page2{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 400px;
+    }
+    .card-container {
+      display: flex;
+      width: 70%;
+      justify-content: space-around;
+    }
+
+    .production-card {
+      width: 242.5px;
+      height: 302px;  
+    }
+
+    .production-card .img img {
+      width: 242.5px;
+      height: 250px;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    .production-card h3 {
+      margin: 10px 0 30px;
+    }
+
+    .production-card p {
+      font-weight: 600;
+      margin: 10px 0;
+    }
+
+    .production-card p::before {
+      content: 'NT$';
+      padding-right: 10px;
+    }
+    .sale::after {
+      content: '$ 7990';
+      display: block;
+      text-decoration: line-through;
+      color: rgb(151, 151, 151);
+    }
+     /* ------------------------------------------------------------------------ */
+
+
+  </style>
+</head>
+
+<body>
+    <!-- 改用figure -->
+  <div class="card-page1-container">
+    <a href="" class="card">
+      <img src="./adidas_img/imageQC28972135_1.jpg" alt="">
+      <p>ULTRABOOST</p>
+    </a>
+    <a href="" class="card">
+      <img src="./adidas_img/imageQC2000014944_1.jpg" alt="">
+      <p>籃球鞋</p>
+    </a>
+    <a href="" class="card">
+      <img src="./adidas_img/imageQC2000027544_2000_1.jpg" alt="">
+      <p>FORUM</p>
+    </a>
+    <a href="" class="card">
+      <img src="./adidas_img/imageQC2000023568_2000_1.jpg" alt="">
+      <p>SUPERSTAR</p>
+    </a>
+  </div>
+
+  <div class="card-page2">
+    <div class="card-container">
+      <div class="production-card sale">
+        <div class="img">
+          <img src="./adidas_img/imageQC2000028846_2000_1.jpg" alt="" />
+        </div>
+        <h3>Ultraboost 22 跑鞋</h3>
+        <p>6500</p>
+      </div>
+      <div class="production-card">
+        <div class="img">
+          <img src="./adidas_img/imageQC2000022596_2000_1.jpg" alt="" />
+        </div>
+        <h3>ALLBIRDS X ADIZERO 跑鞋</h3>
+        <p>4690</p>
+      </div>
+      <div class="production-card sale">
+        <div class="img">
+          <img src="./adidas_img/imageQC2000015582_2000_1.jpg" alt="" />
+        </div>
+        <h3>BAD BUNNY X RESPONSE CL 經典鞋</h3>
+        <p>3980</p>
+      </div>
+      <div class="production-card sale">
+        <div class="img">
+          <img src="./adidas_img/imageQC2000016344_2000_1.jpg" alt="" />
+        </div>
+        <h3>MELTING SADNESS X SUPERSTAR 經典鞋</h3>
+        <p>5980</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

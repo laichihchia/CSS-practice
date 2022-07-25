@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer-mail{
+    width: 100%;
+    background-color: black;
+    .mail-wrap{
+        max-width: 1000px;
+        height: 90px;
+        line-height: 90px;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        a{
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            svg{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.footer-product-list{
+    width: 100%;
+    .product-list{
+        max-width: 1000px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+        .product{
+            margin-top: 15px;
+            line-height: 30px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: rgb(119, 119, 119);
+                }
+                a:hover{
+                    color: rgb(72, 72, 165);
+                }
+            }
+            .product-class{
+                font-weight: 600;
+            }
+        }
+    }
+}
+.footer-company-countainer{
+    width: 100%;
+    background-color:#363738;
+    .company-countainer{
+        max-width: 1000px;
+        height: 42px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        .country-wrap{
+            display: flex;
+            align-items: center;
+            .country{
+                color: rgb(167, 166, 166);
+                text-decoration: none;
+                font-size: 12px;
+            }
+        }
+        .use-rule{
+            a{  
+                color: rgb(167, 166, 166);
+                text-decoration: none;
+                font-size: 12px;
+            }
+            p{  
+                display: inline-block;
+                font-size: 12px;
+                color: rgb(117, 117, 117);
+            }
+        }
+    }
+}
